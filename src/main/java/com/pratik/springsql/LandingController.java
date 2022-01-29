@@ -10,7 +10,10 @@ public class LandingController {
 	public String hello(){
 		return "Hello World";
 	}
-	
+	@GetMapping("/healthy")
+	public String healthy(){
+		return "I'm healthy!";
+	}
 	
 	@GetMapping("/rolldice")
 	public int rolldice(){
