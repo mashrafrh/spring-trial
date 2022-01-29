@@ -8,11 +8,11 @@ public class LandingController {
 
 	@GetMapping("/")
 	public String hello(){
-		return "Hello World";
+		return "Hello there! I am a rest API!";
 	}
 	
-	@GetMapping("/healthy")
-	public String healthy(){
+	@GetMapping("/status")
+	public String status(){
 		return "I am healthy";
 	}
 	
