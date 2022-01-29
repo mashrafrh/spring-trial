@@ -10,4 +10,10 @@ public class LandingController {
 	public String hello(){
 		return "Hello World";
 	}
+	
+	
+	@GetMapping("/rolldice")
+	public int rolldice(){
+		return (int) ((Math.random() * (6 - 1)) + 1);
+	}
 }
