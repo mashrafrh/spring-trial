@@ -19,7 +19,7 @@ public class LandingController {
 	@GetMapping("/rolldice")
 	public int rolldice(){
 	        // define the range
-		int max = 10;
+		int max = 6;
 		int min = 1;
 		int range = max - min + 1;
 		return (int)(Math.random() * range) + min;
